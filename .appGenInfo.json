@@ -1,0 +1,33 @@
+{
+  "generationParameters": {
+    "generationDate": "Thu Oct 08 2026 10:49:10 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP Cloud)",
+    "metadataFilename": "",
+    "serviceUrl": "https://a4796127-12c7-4a21-ae82-e3ced4ab9c3d.abap.us10.hana.ondemand.com/sap/opu/odata4/sap/zmt_av_sb_v2_travel_proc/srvd/sap/zmt_av_sd_travel_processor/0001/",
+    "appName": "managetravel",
+    "appTitle": "ManageTravel",
+    "appDescription": "An SAP Fiori application.",
+    "appNamespace": "mt.ab",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.148.9",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.33.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Travel"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "_Booking"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```",
+    "valueHelpDownloaded": true
+  }
+}

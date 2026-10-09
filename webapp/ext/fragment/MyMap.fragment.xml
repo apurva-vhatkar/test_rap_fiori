@@ -1,0 +1,66 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:vbm="sap.ui.vbm">
+
+  <VBox id="mapVBox">
+    <Text id="mapTitle" text="MyMap" />
+
+    <vbm:AnalyticMap
+        id="flightMap"
+        width="100%"
+        height="600px"
+        initialPosition="-47.483391;48.703659;0"
+        initialZoom="2"
+        class="sapUiMediumMarginTop">
+
+      <vbm:vos>
+
+        <vbm:Routes id="flightRoutes">
+          <vbm:Route id="routeFraJfk"
+                     position="8.682127;50.110924;0;-73.780968;40.641766;0"
+                     color="rgb(204,0,0)"
+                     colorBorder="rgb(255,255,255)"
+                     linewidth="3"
+                     routetype="Geodesic" />
+          <vbm:Route id="routeJfkSfo"
+                     position="-73.780968;40.641766;0;-122.389977;37.615223;0"
+                     color="rgb(255,128,0)"
+                     colorBorder="rgb(255,255,255)"
+                     linewidth="3"
+                     routetype="Geodesic" />
+          <vbm:Route id="routeSfoFra"
+                     position="-122.389977;37.615223;0;8.682127;50.110924;0"
+                     color="rgb(0,153,76)"
+                     colorBorder="rgb(255,255,255)"
+                     linewidth="3"
+                     routetype="Geodesic" />
+        </vbm:Routes>
+
+        <vbm:Spots id="flightSpots">
+          <vbm:Spot id="spotFra"
+                    position="8.682127;50.110924;0"
+                    tooltip="Frankfurt am Main (FRA)"
+                    labelType="Default"
+                    labelText="Frankfurt am Main (FRA)"
+                    labelPos="5" />
+          <vbm:Spot id="spotJfk"
+                    position="-73.780968;40.641766;0"
+                    tooltip="New York (JFK)"
+                    labelType="Default"
+                    labelText="New York (JFK)"
+                    labelPos="5" />
+          <vbm:Spot id="spotSfo"
+                    position="-122.389977;37.615223;0"
+                    tooltip="San Francisco (SFO)"
+                    labelType="Default"
+                    labelText="San Francisco (SFO)"
+                    labelPos="5" />
+        </vbm:Spots>
+
+      </vbm:vos>
+
+    </vbm:AnalyticMap>
+  </VBox>
+
+</core:FragmentDefinition>
